@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Orientation Example</title>
+    <style>
+        body {
+            margin: 0;
+            font-family: Arial, sans-serif;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+        }
+
+        .box {
+            width: 200px;
+            height: 200px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            font-size: 1.2rem;
+            font-weight: bold;
+            color: white;
+            border-radius: 10px;
+            background-color: red;
+        }
+
+        
+
+        /* Landscape Orientation */
+        @media (min-width: 900px)  {
+            .box {
+                background-color: lightblue;
+            }
+        }
+
+        /* Default (Portrait Orientation) */
+        @media (min-width: 600px) and (max-width: 1024px) {
+            .box {
+                background-color: green;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="box">
+        Rotate Me!
+    </div>
+</body>
+</html>
